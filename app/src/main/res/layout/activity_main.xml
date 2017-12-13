@@ -50,7 +50,9 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/pole_edycji"
+        />
 
     <Button
         android:layout_width="220dp"
@@ -59,7 +61,8 @@
         android:textColor="@android:color/holo_blue_light"
         android:textStyle="bold"
         android:background="@android:color/white"
-        android:layout_margin="7dp"/>
+        android:layout_margin="7dp"
+        android:id="@+id/miejsce"/>
 
     <Button
         android:layout_width="250dp"
@@ -68,6 +71,7 @@
         android:textColor="@android:color/holo_blue_light"
         android:textStyle="bold"
         android:background="@android:color/white"
+        android:id="@+id/lista"
         />
 
 
