@@ -1,5 +1,6 @@
 package com.example.student.aplikacjapogodowa;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,8 +32,13 @@ public class MainActivity extends AppCompatActivity {
         Lista_but.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
 
+                Bundle bundle = new Bundle();
+                bundle.putString("Miasto" , "edit");
+                intent.putExtras(bundle);
 
+                startActivity(intent);
             }
         });
 
