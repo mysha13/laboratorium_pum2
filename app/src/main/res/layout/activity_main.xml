@@ -15,7 +15,8 @@
         android:text="Zabrze"
         android:textColor="@android:color/white"
         android:textSize="30dp"
-        android:layout_margin="1dp"/>
+        android:layout_margin="1dp"
+        android:id="@+id/miasto"/>
 
     <ImageView
     android:layout_width="120dp"
@@ -62,7 +63,7 @@
         android:textStyle="bold"
         android:background="@android:color/white"
         android:layout_margin="7dp"
-        android:id="@+id/miejsce"/>
+        android:id="@+id/miejsce_button"/>
 
     <Button
         android:layout_width="250dp"
@@ -71,7 +72,7 @@
         android:textColor="@android:color/holo_blue_light"
         android:textStyle="bold"
         android:background="@android:color/white"
-        android:id="@+id/lista"
+        android:id="@+id/lista_button"
         />
 
 
