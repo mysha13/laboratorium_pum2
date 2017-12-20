@@ -8,42 +8,53 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class MainActivity extends AppCompatActivity {
+    @BindView(R.id.recyclerview)
+    View recylerview;
+    @BindView(R.id.miejsce_button)
+    Button miejsce_button;
+    @BindView(R.id.lista_button)
+    Button lista_button;
+    @BindView(R.id.pole_edycji)
+    EditText pole_edycji;
+    @BindView(R.id.miasto)
+    TextView miasto;
+
+    @OnClick(R.id.miejsce_button)
+    void onClick_mb() {
+        String text = pole_edycji.getText().toString();
+        miasto.setText(text);
+    }
+
+    @OnClick(R.id.lista_button)
+    void onClick_lb() {
+        Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+        startActivity(intent);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
-        Button Miejsce_but=findViewById(R.id.miejsce_button);
-        Button Lista_but=findViewById(R.id.lista_button);
-        final EditText edit =findViewById(R.id.pole_edycji);
-        final TextView Miasto  =findViewById(R.id.miasto);
+        Intent intent = new Intent(MainActivity.this, Main2Activity.class);
 
-        Miejsce_but.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String text=edit.getText().toString();
-                Miasto.setText(text);
+        Bundle bundle = new Bundle();
+        bundle.putString("Miasto", "edit");
+        intent.putExtras(bundle);
 
-            }
-        });
-
-        Lista_but.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
-
-                Bundle bundle = new Bundle();
-                bundle.putString("Miasto" , "edit");
-                intent.putExtras(bundle);
-
-                startActivity(intent);
-            }
-        });
-
+        startActivity(intent);
     }
 
 
-
 }
+
+
+
+

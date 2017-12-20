@@ -9,6 +9,8 @@
     android:background="@android:color/holo_blue_light"
     tools:context="com.example.student.aplikacjapogodowa.MainActivity">
 
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
