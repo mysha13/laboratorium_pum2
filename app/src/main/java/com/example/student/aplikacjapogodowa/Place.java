@@ -17,6 +17,7 @@ public class Place {
         this.temperature = temperature;
     }
 
+
     public String getInformation() {
         return information;
     }

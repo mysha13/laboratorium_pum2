@@ -12,8 +12,14 @@ import java.util.ArrayList;
 
 public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder>{
 
-    
-    private ArrayList<Place> places=new ArrayList<>();
+
+
+    private ArrayList<Place> places = new ArrayList<>();
+
+    PlaceAdapter(ArrayList<Place> places) {
+        this.places = places;
+    }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return null;
