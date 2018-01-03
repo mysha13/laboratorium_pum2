@@ -4,11 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://D:\Ela\laboratorium_pum2\app\app.iml" filepath="D:\Ela\laboratorium_pum2\app\app.iml" />
-      <module fileurl="file://F:\kopia_d\studia_sem5\PUM\aplikacja_pogodowa_repo\laboratorium_pum2\app\app.iml" filepath="F:\kopia_d\studia_sem5\PUM\aplikacja_pogodowa_repo\laboratorium_pum2\app\app.iml" />
       <module fileurl="file://D:\szczyrba\laboratorium_pum2\app\app.iml" filepath="D:\szczyrba\laboratorium_pum2\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/laboratorium_pum2.iml" filepath="$PROJECT_DIR$/laboratorium_pum2.iml" />
       <module fileurl="file://D:\Ela\laboratorium_pum2\laboratorium_pum2.iml" filepath="D:\Ela\laboratorium_pum2\laboratorium_pum2.iml" />
-      <module fileurl="file://F:\kopia_d\studia_sem5\PUM\aplikacja_pogodowa_repo\laboratorium_pum2\laboratorium_pum2.iml" filepath="F:\kopia_d\studia_sem5\PUM\aplikacja_pogodowa_repo\laboratorium_pum2\laboratorium_pum2.iml" />
       <module fileurl="file://D:\szczyrba\laboratorium_pum2\laboratorium_pum2.iml" filepath="D:\szczyrba\laboratorium_pum2\laboratorium_pum2.iml" />
     </modules>
   </component>

@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -21,21 +22,22 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        ButterKnife.bind(this);
 
-        ArrayList<String> places = new ArrayList<>(Arrays.asList("Chorzów", "Katowice", "Ruda Sląska"));
+        ArrayList<Place> places = new ArrayList<>();
+        places.add(new Place ("Chorzow",21," "));
+        places.add(new Place("Katowice",25," "));
+        places.add(new Place("Ruda Sląska", 22," "));
 
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
 
-        //PlaceAdapter placeAdapter = new PlaceAdapter(places);
-        //recyclerView.setAdapter(placeAdapter);
+        PlaceAdapter placeAdapter = new PlaceAdapter(places);
+        recyclerView.setAdapter(placeAdapter);
 
 
-        /*ArrayList<Place> places = new ArrayList<>();
-        places.add(1,"Chorzow");
-        places.add(1,"Katowice");
-        places.add(new Place("Chorzow", 11));*/
+
     }
 
 
