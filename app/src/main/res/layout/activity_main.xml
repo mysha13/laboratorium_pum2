@@ -22,7 +22,8 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_margin="4dp"
-        android:src="@drawable/ic_wb_sunny_black_24dp" />
+        android:src="@drawable/ic_wb_sunny_black_24dp"
+        android:id="@+id/obrazek"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,7 +31,8 @@
         android:layout_margin="4dp"
         android:text="30 stopni celcjusza"
         android:textColor="@android:color/white"
-        android:textSize="18dp" />
+        android:textSize="18dp"
+        android:id="@+id/temp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,7 +40,8 @@
         android:layout_margin="4dp"
         android:text="Pamiętaj o filtrze"
         android:textColor="@android:color/white"
-        android:textSize="18dp" />
+        android:textSize="18dp"
+        android:id="@+id/opis"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,7 +49,8 @@
         android:layout_margin="4dp"
         android:text="Podaj miejsce"
         android:textColor="@android:color/white"
-        android:textSize="18dp" />
+        android:textSize="18dp"
+        android:id="@+id/tekst_podajmiast"/>
 
     <EditText
         android:id="@+id/pole_edycji"
